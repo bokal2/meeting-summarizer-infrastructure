@@ -9,3 +9,8 @@ variable "project_name" {
   default     = "meeting-notes"
 
 }
+
+variable "docker_registry_name" {
+  type    = string
+  default = "bokal-demo"
+}
