@@ -1,7 +1,7 @@
 # Meeting Summarizer AWS Infrastructure (Terraform)
 
 ## Overview
-This Terraform project provisions AWS infrastructure for the **Meeting Summarizer** application. It includes S3 buckets, ECR, VPC, IAM roles, and an EKS cluster for running containerized workloads.
+This Terraform project provisions AWS infrastructure for the [meeting-summarizer](https://github.com/bokal2/meeting-summarizer-backend) application. It includes S3 buckets, ECR, VPC, IAM roles, and an EKS cluster for running containerized workloads.
 
 ## Infrastructure Components
 
