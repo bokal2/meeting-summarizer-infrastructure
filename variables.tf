@@ -38,11 +38,6 @@ variable "public_subnets" {
   default = ["10.0.2.0/24", "10.0.3.0/24"]
 }
 
-variable "db_subnets" {
-  type    = list(string)
-  default = ["10.0.4.0/24", "10.0.5.0/24"]
-}
-
 variable "business_divsion" {
   description = "Business Division in the large organization this Infrastructure belongs"
   type        = string

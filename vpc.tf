@@ -11,11 +11,6 @@ module "vpc" {
   public_subnets  = var.public_subnets
   private_subnets = var.private_subnets
 
-  # Database subnet
-  create_database_subnet_group       = var.vpc_create_database_subnet_group
-  create_database_subnet_route_table = var.vpc_create_database_subnet_route_table
-  database_subnets                   = var.db_subnets
-
   # Nat Gateway
   enable_nat_gateway = var.vpc_enable_nat_gateway
   single_nat_gateway = var.vpc_single_nat_gateway
@@ -31,10 +26,6 @@ module "vpc" {
 
   private_subnet_tags = {
     type = "private-subnets"
-  }
-
-  database_subnet_tags = {
-    type = "database-subnets"
   }
 
   tags = local.common_tags
